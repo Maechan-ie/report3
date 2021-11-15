@@ -13,13 +13,24 @@ public class Hero {
     private int hitPoint;
     private int attack;
     private boolean dead;
-
+    /**
+     * privateに設定されたフィールドから値を取り出す。
+     * @return name
+     */
     public String getName(){
         return this.name;
     }
+    /**
+     * privateに設定されたフィールドから値を取り出す。
+     * @return dead
+     */
     public boolean isDead(){
         return this.dead;
     }
+    /**
+     * privateに設定されたフィールドから値を取り出す。
+     * @return hitpoint
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }

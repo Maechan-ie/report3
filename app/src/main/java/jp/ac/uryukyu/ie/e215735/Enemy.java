@@ -13,13 +13,24 @@ public class Enemy {
     private int hitPoint;
     private int attack;
     private boolean dead;
-    
+    /**
+     * privateに設定されたフィールドから値を取り出す。
+     * @return name
+     */
     public String getName(){
         return this.name;
     }
+    /**
+     * privateに設定されたフィールドから値を取り出す。
+     * @return dead
+     */
     public boolean isDead(){
         return this.dead;
     }
+    /**
+     * privateに設定されたフィールドから値を取り出す。
+     * @return hitpoint
+     */
     public int getHitPoint(){
         return this.hitPoint;
     }
@@ -38,7 +49,7 @@ public class Enemy {
     }
     /**
      * Heroへ攻撃するメソッド。
-     * attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
+     * hitpointが0以上のとき、attackに応じて乱数でダメージを算出し、hero.wounded()によりダメージ処理を実行。
      * @param hero 攻撃対象
      */
     public void attack(Hero hero){
